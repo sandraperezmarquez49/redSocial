@@ -1,0 +1,94 @@
+@import '../../../styles.scss';
+
+h1 {
+    color: $green1;
+    font-weight: 100;
+    font-size: 28px;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.icon-edit-app {
+	color: $gray1;
+	font-size: 22px;
+	transition: all .8s ease;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.app-id-box {
+    background-color: $blue1;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+    	background-color: $green1;
+    }
+
+    .icon {
+	    font-size: 19px;
+	    margin-left: 5px;
+	    margin-right: 4px;
+	}
+}
+
+.topbat-right {
+    float: right;
+
+    .icon {
+	    color: $gray1;
+	    font-size: 30px;
+	    margin-top: -9px;
+	    width: 34px;
+	    cursor: pointer;
+	    transition: all .3s ease;
+	    margin-left: 20px;
+
+	    &:hover {
+	    	color: $green1;
+	    }
+	}
+
+	.top-langs {
+	    margin-right: 5px;
+
+		img {
+		    width: 24px;
+		    margin: 5px;
+		    margin-top: -11px;
+		    cursor: pointer;
+		    opacity: .3;
+
+		    &.active {
+		    	opacity: 1;
+		    }
+		}
+	}
+}
+
+.email-user {
+    vertical-align: text-bottom;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.img-top {
+    height: 30px;
+    margin-top: -7px;
+}
+
+
+@media (max-width: 768px) {
+	h1 {
+	    font-size: 24px;
+	    display: inline-block;
+	    margin-top: 5px;
+	}
+}

@@ -1,0 +1,30 @@
+@import '../../../styles.scss';
+@import '../../../assets/css/hamburguer.css';
+.top-header {
+    width: 100%;
+    height: 70px;
+    background: $green1;
+    box-shadow: $shadow1;
+    .top-logo {
+        height: 60px;
+        padding-top: 5px;
+        display: block;
+        margin: 0px auto;
+    }
+}
+
+.hamburger-btn {
+    position: absolute;
+    top: 7px;
+}
+
+.login-content-login {
+    padding: 20px;
+    background-color:$gray1;
+}
+
+.login-logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}

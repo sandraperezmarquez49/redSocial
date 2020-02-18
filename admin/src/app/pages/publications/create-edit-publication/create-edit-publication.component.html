@@ -1,0 +1,44 @@
+<div class="main-wraper-content">
+    <div class="separator"></div>
+    <div class="separator"></div>
+    <h2>{{currentIdPublic ? "Editar" : "Nueva" }} Publicación</h2>
+
+    <mat-progress-bar mode="indeterminate" *ngIf="load"></mat-progress-bar>
+
+    <form [formGroup]="form" novalidate>
+
+        <div class="form-container">
+            <div class="separator"></div>
+            <mat-form-field class="form-field-100" appearance="outline">
+                <mat-label> Descripción </mat-label>
+                <textarea matInput formControlName="descripcion"></textarea>
+                <mat-error>Máximo 120 caracteres</mat-error>
+                <mat-hint>{{form.controls['descripcion'].value?.length}} de 120</mat-hint>
+            </mat-form-field>
+        </div>
+        <div class="separator"></div>
+        <input #nombreCImagen type="file" accept="image/*" (change)="onFileChange($event)" hidden />
+
+        <button mat-raised-button color="primary" (click)="nombreCImagen.click()">{{currentIdPublic ? "Cambiar" : "Subir" }} Imágen</button>
+
+        <div class="separator"></div>
+
+        <!-- Crear -->
+        <img *ngIf="!currentIdPublic" [src]="form.controls['image'].value" class="mw400px">
+
+        <!-- Editar -->
+        <img *ngIf="currentIdPublic" [src]="form.controls['image'].value ? form.controls['image'].value :  filesUrl + 'usuarios/' + form.controls['imagen'].value + '.png' " class="mw400px">
+
+        <div class="buttons-container">
+            <span class="error" *ngIf="error">{{error}}</span>
+            <div class="separator"></div>
+            <button class="mr-10" mat-raised-button routerLink="/">Cancelar</button>
+            <button mat-raised-button color="primary" (click)="creatEdit()" [disabled]="form.invalid || loading">{{currentIdPublic ? "Editar" : "Crear" }}</button>
+            <div class="separator"></div>
+            <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+        </div>
+
+
+    </form>
+
+</div>

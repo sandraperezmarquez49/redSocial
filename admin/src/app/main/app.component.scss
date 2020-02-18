@@ -1,0 +1,74 @@
+@import './../../styles.scss';
+.secondary-text {
+    color: $green1;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-content {
+    //@include gradient1();
+    height: 100vh;
+    padding: 20px;
+}
+.login-content-login {
+    padding: 20px;
+    background-color: $orange1;
+}
+
+.login-logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+
+}
+   
+
+h1 {
+    text-align: center;
+    color: $gray1;
+    font-weight: 100;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: $shadow1;
+    .block-centered {
+        text-align: center;
+        color: $gray2;
+    }
+}
+
+.msg-verify {
+    padding: 5px;
+    text-align: justify;
+}
+
+.loader-verify {
+    width: 20px;
+}
+
+.icon-done-verify {
+    font-size: 100px;
+    color: $green1;
+}
+
+.loader-login {
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.doitnow {
+    font-weight: bold;
+    cursor: pointer;
+}

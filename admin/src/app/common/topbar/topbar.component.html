@@ -1,0 +1,12 @@
+<div class="topbat-content">
+    <div class="topbat-right">
+      
+        <i class="icon ion-md-person" [matMenuTriggerFor]="menu"></i>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/">Inicio</button>
+            <button mat-menu-item [routerLink]="['/usuario/editar', user['idUsuario']]">Mi Perfil</button>
+            <button mat-menu-item (click)="logout()">Salir</button>
+        </mat-menu>
+    </div>
+
+</div>

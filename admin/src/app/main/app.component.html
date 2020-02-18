@@ -1,0 +1,15 @@
+<div class="general-container short-{{!sidebar}} menu-opened-{{menuMobile}}" *ngIf="!loading">
+  <app-login-admin *ngIf="!user"></app-login-admin>
+
+    <div *ngIf="user">
+        <div class="login-content-login">
+            <img class="login-logo" src="assets/logRed.png">
+           
+        </div>
+        <div class="container">
+            <app-topbar class="right-float" *ngIf="user"></app-topbar>
+            <router-outlet></router-outlet>
+        
+        </div> 
+    </div>
+</div>

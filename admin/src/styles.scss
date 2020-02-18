@@ -1,0 +1,627 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+$green1: #000020;
+$green2: #2A98F3;
+$blue1: #2A98F3;
+$orange1: #FF4F0F;
+$gray1: #555;
+$gray2: #999;
+$gray3: #f7f7f7;
+$shadow1: 0 0 20px rgba(0, 0, 0, 0.5);
+$shadow2: 0 0 20px rgba(0, 0, 0, 0.2);
+*:focus {
+    outline: 0 !important;
+}
+
+agm-map {
+    height: 300px;
+}
+
+a {
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+.item-active {
+    background-color: $green2;
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+
+.item-inactive {
+    background-color: $gray1;
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+
+.item-menu {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.qr-dialog img {
+    margin: 0 auto;
+}
+
+
+app-sidebar {
+    width: 210px;
+    height: 100vh;
+    background-color: #2194F2 !important;
+    box-shadow: $shadow1;
+    position: relative;
+    transition: all .3s ease;
+    position: fixed;
+    z-index: 9;
+}
+
+.btn-secundary {
+    margin-left: 10px;
+}
+
+.error-line {
+    text-align: left !important;
+    margin-bottom: 10px;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: $orange1 !important;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
+
+.mat-simple-snackbar-action,
+.mat-slide-toggle:not(.mat-checked) .mat-ripple-element,
+.mat-slide-toggle.mat-checked .mat-ripple-element {
+    color: $orange1 !important;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: rgba(255, 152, 64, 0.54) !important;
+}
+
+button.btn.btn-secundary {
+    border-radius: 5px;
+}
+
+.main-color {
+    color: $green1;
+}
+
+.curs-pointer {
+    cursor: pointer;
+}
+
+.m-30 {
+    margin: 30px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mv-5 {
+    margin: 5px 0px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.no-date-table {
+    text-align: center;
+    padding: 20px;
+}
+
+// Context Menu
+.contex-menu-btn {
+    width: 100%;
+    text-align: left;
+}
+
+a,
+a:not([href]):not([tabindex]) {
+    color: $green1;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h2 {
+    color: $gray1;
+    font-weight: 100;
+    font-size: 28px;
+    border-left: solid 2px $green1;
+    padding-left: 10px;
+    display: block;
+    background-color: $gray3;
+    padding-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 300;
+    color: $green1;
+}
+
+.form-field-100 {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+table.mat-table {
+    width: 100%;
+}
+
+td.cell-id {
+    width: 70px;
+}
+
+td.cell-actions {
+    width: 120px;
+}
+
+.has-search {
+    max-width: 280px;
+    display: inline-block;
+    .form-control {
+        padding-left: 2.375rem;
+    }
+    .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+    }
+}
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.btns-centered {
+    width: 180px;
+    margin: 0 auto;
+}
+
+.main-wraper {
+    width: calc(100% - 260px);
+    display: inline-block;
+    margin-left: 230px;
+    transition: all .35s ease;
+    padding: 5px;
+    //color: $gray2;
+    color: black;
+}
+
+.separator {
+    padding: 7px;
+}
+
+.btn-primary,
+.ng2-imgcrop input {
+    color: #fff !important;
+    border: 0;
+    transition: all .8s;
+    border-radius: 5px;
+    background: $green1;
+    &:hover {
+        background: $green1;
+    }
+}
+
+.ng2-imgcrop input {
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.btn-secundary {
+    color: #fff;
+    border-color: white;
+    transition: all .8s;
+    border-radius: 15px;
+    background: $gray2;
+    &:hover {
+        background: $gray1;
+    }
+}
+
+.input-centered {
+    margin: 0 auto;
+    display: block;
+}
+
+.input-group-text {
+    padding: 0 7px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: $green1;
+    width: 38px;
+    i {
+        margin: 0 auto;
+    }
+}
+
+.btn-margin {
+    margin: 0 5px;
+}
+
+.sidebar-menu-item.active {
+    background-color: #fff !important;
+    color: #3749a3 !important;
+    text-shadow: none;
+}
+
+.short-true {
+    div.main-wraper {
+        width: calc(100% - 140px);
+        margin-left: 120px;
+    }
+    app-sidebar {
+        width: 100px;
+        .sidebar-menu {
+            height: calc(100% - 52px);
+        }
+        .sidebar-menu-item {
+            padding: 4px 0;
+            text-align: center;
+            .icon {
+                width: 100%;
+                font-size: 25px;
+                text-align: center;
+            }
+            span {
+                font-size: 12px;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    img.side-logo {
+        width: 0;
+        opacity: 0;
+        padding: 0;
+        &.logo-m {
+            opacity: 1;
+            padding: 10px;
+        }
+    }
+}
+
+.short-false {
+    img.side-logo.logo-m {
+        width: 0;
+        opacity: 0;
+        padding: 0;
+    }
+}
+
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner::before,
+.hamburger .hamburger-inner::after {
+    background-color: white!important;
+}
+
+[routerLink] {
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.mat-accent .mat-slider-thumb,
+.mat-accent .mat-slider-thumb-label,
+.mat-accent .mat-slider-track-fill {
+    background-color: $blue1;
+}
+
+.ng2-imgcrop {
+    canvas {
+        display: block;
+        margin: 20px auto 0;
+    }
+    input {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.hide-canvas {
+    canvas {
+        display: none !important;
+    }
+}
+
+.table-icon-action {
+    font-size: 20px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: $gray2;
+    transition: all .3s ease;
+}
+
+// .table-striped {
+// .table-icon-action {
+//     color: $gray1 !important;
+// }
+.icon-remove {
+    color: red;
+    &:hover {
+        background-color: red;
+        color: white;
+    }
+}
+
+.icon-edit {
+    color: $green1;
+    &:hover {
+        background-color: $green1;
+        color: white;
+    }
+}
+
+.icon-view {
+    color: black;
+    font-size: 22px;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.icon-star1 {
+    color: gold;
+    font-size: 22px;
+    &:hover {
+        background-color: $gray1;
+        color: white;
+    }
+}
+
+.icon-star2 {
+    color: $gray1;
+    font-size: 22px;
+    &:hover {
+        background-color: gold;
+        color: white;
+    }
+}
+
+a {
+    color: $green1;
+}
+
+//}
+.snack-bar {
+    background-color: $green1;
+    color: white;
+    .mat-simple-snackbar-action {
+        color: white;
+    }
+}
+
+.tools-btn {
+    color: $gray2;
+    background-color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background-color: $gray3 !important;
+        color: $blue1;
+    }
+    &.active {
+        color: $green1;
+    }
+}
+
+.breadcrumb {
+    .breadcrumb-separator {
+        margin-right: 2px;
+        color: $green1;
+    }
+}
+
+.cdk-dag-placeholder {
+    display: none;
+}
+
+.right-float {
+    float: right;
+    // margin-top: -40px;
+}
+
+.btn-xs {
+    font-size: 12px;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.card-item {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #fbfbfb;
+    padding: 20px;
+    box-shadow: 0 0 7px #00000052;
+    border-radius: 20px;
+    transition: all .5s ease;
+    opacity: 1;
+    display: block;
+    &:hover {
+        opacity: 1;
+        >.card-tools {
+            opacity: 1;
+        }
+    }
+    img {
+        width: calc(100% - 60px);
+    }
+    .card-tools {
+        position: absolute;
+        left: 50%;
+        margin-left: -51px;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+    .card-btn {
+        display: inline-block;
+        background-color: $gray2;
+        color: white;
+        padding: 5px;
+        margin: 3px;
+        width: 28px;
+        border-radius: 50%;
+        font-size: 12px;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: $orange1;
+        }
+    }
+}
+
+.card-card-item {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.active-true .card-item {
+    border: solid $green2 3px;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: $orange1 !important;
+}
+
+.form-control-xs {
+    padding: 5px 5px;
+}
+
+.has-search {
+    .form-control-xs {
+        padding-left: 30px;
+    }
+}
+
+.mat-primary .mat-pseudo-checkbox-checked,
+.mat-primary .mat-pseudo-checkbox-indeterminate {
+    background: $orange1 !important;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: $orange1 !important;
+}
+
+.img-logo {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: block;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+// MAT TABLES
+.table-link {
+    color: $green1;
+    cursor: pointer;
+}
+
+// END MATA TABLES
+.gray-image {
+    filter: grayscale(100%);
+}
+
+.center-spinner {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.mw400px {
+    max-width: 400px;
+}
+
+.mw150px {
+    max-width: 150px;
+}
+
+.mw200px {
+    max-width: 200px;
+    max-height: 300px;
+    border: 10px solid $gray3;
+}
+
+@media (max-width: 768px) {
+    app-sidebar {
+        display: none;
+    }
+    .short-true div.main-wraper,
+    .short-false div.main-wraper {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 15px;
+    }
+    .topbat-content {
+        position: relative;
+        .topbat-right {
+            position: relative;
+            right: 5px;
+            top: -8px;
+            float: none;
+        }
+    }
+    .menu-opened-true {
+        overflow: hidden;
+        height: 0px;
+        app-sidebar {
+            display: block;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+    }
+    .card-item {
+        >.card-tools {
+            opacity: 1;
+        }
+    }
+}

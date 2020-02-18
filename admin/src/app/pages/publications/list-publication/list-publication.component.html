@@ -1,0 +1,29 @@
+<div class="main-wraper-content">
+    <div class="separator"></div>
+    <h3 class="right-float">¡Hola {{user.nombre}}!</h3>
+    <div class="separator"></div>
+    <div class="separator"></div>
+    <h2>Publicaciones</h2>
+    <a class="btn btn-primary right-float" routerLink="/publicacion/crear"><i aria-hidden="true" class="fas fa-plus" ></i> Nueva Publicación </a>
+    <div class="separator"></div>
+    <div class="separator"></div>
+    <mat-spinner class="center-spinner" *ngIf="loading"></mat-spinner>
+
+
+    <div class="cards-container example-list" cdkDropList (cdkDropListDropped)="onListDrop($event)">
+
+        <mat-card cdkDrag class="categoria-card example-box" *ngFor="let publicacion of publicaciones;let idx = index">
+            <mat-card-header>
+
+                <mat-card-title>Usuario{{publicacion.idUsuario}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]="filesUrl + 'usuarios/' + publicacion.imagen + '.png' ">
+            <mat-card-content>{{publicacion.descripcion}}</mat-card-content>
+            <mat-card-actions class="text-right" [hidden]="publicacion.idUsuario != user['idusuario']">
+                <i class="fas fa-pen table-icon-action icon-edit" [routerLink]="['/publicacion/editar', publicacion.idPublicacion]" aria-hidden="true" matTooltip="Editar"></i>
+                <i class="fas fa-trash table-icon-action icon-remove" matTooltip="Eliminar" (click)="delete(publicacion, idx)"></i>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<style>
+  .mat-dialog-actions {
+    display: inherit;
+  }
+  .center{
+    text-align: center;
+  }
+  p{
+    font-weight: bold;
+    margin-bottom: 2em;
+  }
+</style>
+
+<div class="center">
+  <h1 mat-dialog-title>{{data.title}}</h1>
+  <div mat-dialog-content><p>{{data.subtitle}}</p></div>
+  <div mat-dialog-actions>
+    <button class="btn btn-secundary btn-margin" (click)="cancel()">{{data.cancel}}</button>
+    <button class="btn btn-primary btn-margin" [mat-dialog-close]="true" cdkFocusInitial>{{data.done}}</button>
+  </div>
+</div>
